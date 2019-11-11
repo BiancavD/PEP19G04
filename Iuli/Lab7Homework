@@ -74,11 +74,11 @@ elif magazin_ieftin2>magazin_ieftin1 and magazin_ieftin2>magazin_ieftin3:
 elif magazin_ieftin3>magazin_ieftin1 and magazin_ieftin3>magazin_ieftin2:
     print("Magazinul 3 are cele mai ieftine produse!")
 elif magazin_ieftin1==magazin_ieftin2:
-    print("Magazinul 1 si 2 au cele mai ieftine produse!")
+    print("Magazinele 1 si 2 au cele mai ieftine produse!")
 elif magazin_ieftin1==magazin_ieftin3:
-    print("Magazinul 1 si 3 au cele mai ieftine produse!")
+    print("Magazinele 1 si 3 au cele mai ieftine produse!")
 elif magazin_ieftin2==magazin_ieftin3:
-    print("Magazinul 2 si 3 au cele mai ieftine produse!")
+    print("Magazinele 2 si 3 au cele mai ieftine produse!")
 
 
      
