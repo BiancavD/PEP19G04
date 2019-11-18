@@ -1,0 +1,7 @@
+1. Parcurgere exercitii curs ( intrebari, consolidare pe subiect )
+
+2. Problema dictionar ( parcurgere, intrebari, consolidare pe subiect ):
+	- sa se adauge pentru fiecare angajat alte 2 valori: ore_suplimentare, proiecte_extracurriculare, tarif_suplimentare
+	- sa se scrie o functie care verifica daca angajatul are ore suplimentare si sa adauge la salariul un bonus in functie de orele suplimentare si tariful
+ pe orele suplimentare
+	- sa se scrie o functie care adauga la salariul fiecarui angajat un bonus in functie de nr. de proiecte extracurriculare ( 200 lei/proiect )
