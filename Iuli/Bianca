@@ -1,0 +1,58 @@
+lista_de_cumparaturi={
+    "brad de craciun":1,
+    "decoratiuni brad":10,
+    "tacamuri":20,
+    "bomboane":100,
+    "jucarii":5,
+    "instalatie de craciun":2
+}
+
+jumbo={
+    "brad de craciun":399.9,
+    "decoratiuni brad":3,
+    "tacamuri":7,
+    "bomboane":0.5,
+    "jucarii":260,
+    "folie cadouri":10
+
+}
+
+carrefour={
+    "brad de craciun":259.99,
+    "instalatie de craciun":31.23,
+    "suc":2.49,
+    "bomboane":1,
+    "jucarii":23.99,
+    
+}
+suma=0
+sum1=0
+sum2=0
+def fun(produs,pret,pret1):
+    global suma
+    global sum1
+    global sum2
+    for produs in lista_de_cumparaturi:
+        for pret in jumbo:
+            for pret1 in carrefour:
+                if produs==pret and jumbo[pret]<carrefour[pret1]:
+                    Prod=lista_de_cumparaturi[produs]*jumbo[pret]
+                    suma=suma+Prod
+                    #print(Prod)
+                    
+                elif produs==pret1 and carrefour[pret1]<jumbo[pret]:
+                    Prod1=lista_de_cumparaturi[produs]*carrefour[pret1]
+                    suma=suma+Prod1
+                    #print(Prod1)
+                    
+                    
+                    
+     
+    print(suma)             
+                    
+                
+    
+
+fun(lista_de_cumparaturi,jumbo,carrefour)
+
+
