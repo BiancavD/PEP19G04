@@ -1,0 +1,31 @@
+lista_de_cumparaturi={
+    "brad de craciun":1,
+    "decoratiuni brad":10,
+    "tacamuri":20,
+    "bomboane":100,
+    "jucarii":5,
+    "instalatie de craciun":2
+}
+
+jumbo={
+    "brad de craciun":399.9,
+    "decoratiuni brad":3,
+    "tacamuri":7,
+    "bomboane":0.5,
+    "jucarii":50,
+    "folie cadouri":10
+
+}
+sum=0
+def fun(produs,pret):
+    global sum
+    for produs in lista_de_cumparaturi:
+        for pret in jumbo:
+            if produs==pret:
+                Prod=lista_de_cumparaturi[produs]*jumbo[pret]
+                sum=sum+Prod
+    print(sum)
+
+fun(lista_de_cumparaturi,jumbo)
+
+
