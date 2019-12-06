@@ -110,7 +110,7 @@ def update_angajat():
                 elif digits1 or symbol1:
                     digits1==True 
                     symbol1==True
-                    messagebox.showinfo("Eroare", "namele nu poate contine cifre sau simboluri!")
+                    messagebox.showinfo("Eroare", "Numele nu poate contine cifre sau simboluri!")
                     return
                 
                 elif letters2 or symbol2:
