@@ -1,0 +1,16 @@
+Sa se scrie un program care:
+
+Creeaza o clasa:
+		
+	1. Angajat
+		a. nume, varsta, departament
+		b. o functie salariu_anual care face calculul salariu anual in functie de departament ( vezi dictionar )
+		c. afisare
+
+Creeaza un dictionar:
+	
+	1. Salariu_Departament
+		a. keys - nume departament
+		b. values - salariu
+
+Sa se instantieze 6 obiecte de tip angajat ( cu caracteristici diferite ) si sa se afiseze datele necesare despre ele.

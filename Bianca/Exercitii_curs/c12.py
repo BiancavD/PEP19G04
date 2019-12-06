@@ -1,6 +1,6 @@
-class Masina():
+class Masina():   #clasa de baza
 
-    __marca = None
+    __marca = None    #variablia privata
     __putere = None
     __nr_usi = None
     __tip_motor = None
@@ -29,7 +29,7 @@ class SUV(Masina):
     __garda_sol = None
 
     def __init__(self, marca, putere, nr_usi, tip_motor, culoare, garda_sol):
-        Masina.__init__(self, marca, putere, nr_usi, tip_motor, culoare)
+        Masina.__init__(self, marca, putere, nr_usi, tip_motor, culoare)  #initializator constructor... arata ce mosteneste de la clasa de baza.
         self.__garda_sol = garda_sol
 
     def print(self):
