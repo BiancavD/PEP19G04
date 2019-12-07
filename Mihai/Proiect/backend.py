@@ -38,18 +38,16 @@ def update_angajat(id,name,cnp):
     cur=conn.cursor()
     cur.execute("UPDATE DATABASE SET name=?,cnp =?  where id=?",(name,cnp,id))
     conn.commit()
-    messagebox.showinfo("Angajatul a fost modificat cu success")
     conn.close()
-    view()
-
+    
+    
 def update_salariu(id,name,salariu):
     conn=sqlite3.connect("database.db")
     cur=conn.cursor()
     cur.execute("UPDATE DATABASE SET name=?, salariu = ? where id=?",(name,salariu,id))
     conn.commit()
-    messagebox.showinfo("Salariul a fost modificat cu success")
     conn.close()
-    view()
+    
 
 def salariu_redus():
     conn=sqlite3.connect("database.db")
