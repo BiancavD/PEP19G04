@@ -14,7 +14,7 @@ def insert(name,cnp,salariu):
     cur=conn.cursor()
     cur.execute("INSERT INTO database VALUES (NULL, ?,?,?)",(name,cnp,salariu))
     conn.commit()
-    messagebox.showinfo("Angajatul a fost adaugat cu success")
+    messagebox.showinfo("Information","Angajatul a fost adaugat cu success")
     conn.close()
     view()
 
@@ -38,14 +38,18 @@ def update_angajat(id,name,cnp):
     cur=conn.cursor()
     cur.execute("UPDATE DATABASE SET name=?,cnp =?  where id=?",(name,cnp,id))
     conn.commit()
+    messagebox.showinfo("Angajatul a fost modificat cu success")
     conn.close()
+    view()
 
 def update_salariu(id,name,salariu):
     conn=sqlite3.connect("database.db")
     cur=conn.cursor()
     cur.execute("UPDATE DATABASE SET name=?, salariu = ? where id=?",(name,salariu,id))
     conn.commit()
+    messagebox.showinfo("Salariul a fost modificat cu success")
     conn.close()
+    view()
 
 def salariu_redus():
     conn=sqlite3.connect("database.db")
